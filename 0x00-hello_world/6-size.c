@@ -2,7 +2,7 @@
 /**
  * *main - print size
  * *Return: a zero
- * */
+ */
 int main(void)
 {
 char c;
