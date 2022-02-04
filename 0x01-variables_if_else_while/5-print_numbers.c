@@ -6,6 +6,6 @@
 */
 int main(void)
 {
-printf("012345\n");
+printf("0123456789\n");
 return (0);
 }
