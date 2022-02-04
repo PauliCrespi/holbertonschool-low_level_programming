@@ -13,7 +13,10 @@ for (ch = '0'; ch <= '9'; ch++)
 {
 putchar (ch);
 putchar (comma);
+if (ch <9)
+{
 putchar (' ');
+}
 }
 putchar ('\n');
 return (0);
