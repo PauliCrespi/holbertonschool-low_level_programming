@@ -12,13 +12,13 @@ int cc;
 comma = 44;
 for (ch = '0'; ch < '9'; ch++)
 {
-for (cc = '0'; cc <= '9'; cc++)
+for (cc = ch; cc <= '9'; cc++)
 {
 if (ch != cc)
 {
 putchar (ch);
 putchar (cc);
-if (ch < '8' && cc < '9')
+if (ch < '8' && cc <= '9')
 {
 putchar (comma);
 putchar (' ');
