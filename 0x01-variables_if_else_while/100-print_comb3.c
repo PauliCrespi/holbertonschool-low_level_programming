@@ -10,9 +10,9 @@ int comma;
 int ch;
 int cc;
 comma = 44;
-for (ch = '0'; ch <= '9'; ch++)
+for (ch = '0'; ch < '9'; ch++)
 {
-for (cc = '0'; cc < '9'; cc++)
+for (cc = '0'; cc <= '9'; cc++)
 {
 if (ch != cc)
 {
