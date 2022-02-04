@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-char comma;
+int comma;
 int ch;
 comma = 44;
 for (ch = '0'; ch <= '9'; ch++)
