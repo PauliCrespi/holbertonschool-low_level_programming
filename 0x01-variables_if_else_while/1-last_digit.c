@@ -1,16 +1,17 @@
 #include <stdlib.h>
 #include <time.h>
-/* main - function checks last digit
+#include <stdio.h>
+/** main - function checks last digit
 *Return: zero
 */
 int main(void)
 {
 int n;
+int lastDigit;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int lastDigit;
-lastDigit = n % 10;
-printf("Last digit of %d is %d", n, lastDigit);
+lastDigit = (n % 10);
+printf("Last digit of %d is %d ", n, lastDigit);
 if (lastDigit > 5)
 {
 printf("and is greater than five\n");
