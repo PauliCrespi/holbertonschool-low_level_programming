@@ -1,24 +1,27 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
-/* more headers goes there */
-/* main - random number evaluation
-*Return: zero
-*/
+/**
+ *main - Random number evaluation
+ *
+ *Return: zero
+ */
 int main(void)
 {
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-/* your code goes there */
 if (n < 0)
 {
 printf("is negative\n");
 }
-else if (n > 0)
+else
+{
+if (n > 0)
 {
 printf("is positive \n");
-}
-else if (n == 0)
+}}
+else
 {
 printf("is zero \n");
 }
