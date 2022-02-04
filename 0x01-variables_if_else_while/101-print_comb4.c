@@ -12,6 +12,7 @@ int main(void)
 	int cc;
 	int ccc;
 	comma = 44;
+
 	for (ch = '0'; ch < '9'; ch++)
 	{
 		for (cc = ch; cc <= '9'; cc++)
