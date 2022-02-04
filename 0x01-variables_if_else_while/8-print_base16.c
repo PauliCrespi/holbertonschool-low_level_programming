@@ -12,7 +12,7 @@ for (ch = '0'; ch <= '9'; ch++)
 {
 putchar (ch);
 }
-for (letter = 'a'; ch <= 'f'; ch++)
+for (letter = 'a'; letter <= 'f'; letter++)
 {
 putchar (letter);
 }
