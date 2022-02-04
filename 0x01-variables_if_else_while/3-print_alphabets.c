@@ -11,7 +11,6 @@ char CH;
 for (ch = 'a'; ch <= 'z'; ch++)
 {
 putchar (ch);
-return (0);
 }
 for (CH = 'A'; CH <= 'Z'; ch++)
 {
