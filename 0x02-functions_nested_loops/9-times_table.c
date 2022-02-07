@@ -24,7 +24,7 @@ _putchar(v + '0');
 }
 else
 {
-if (m != 0)
+if (x != 0)
 {
 _putchar (' ');
 }
