@@ -14,7 +14,7 @@ for (m = 0; m <= 9; m++)
 {
 for (x = 0; x <= 9; x++)
 {
-multi = x * m;
+multi = (x * m);
 if (multi > 9)
 {
 v = multi / 10;
