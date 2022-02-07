@@ -21,10 +21,15 @@ v = multi / 10;
 _putchar (v);
 v = multi % 10;
 _putchar(v);
+}
+else
+{
+_putchar (multi);
+}
 if (x <= 8)
 {
 _putchar (',');
 _putchar (' ');
-}}}
+}}
 _putchar ('\n');
 }}
