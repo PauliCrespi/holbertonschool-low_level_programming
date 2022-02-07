@@ -15,7 +15,7 @@ for (m = 0; m <= 9; m++)
 for (x = 0; x <= 9; x++)
 {
 multi = x * m;
-if (multi > 9)
+if (multi > 9 && multi != 0)
 {
 v = multi / 10;
 _putchar (v + '0');
