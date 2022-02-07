@@ -2,28 +2,22 @@
 #include <ctype.h>
 
 /**
-*main - check the code.
+*_isalpha - check the code.
+* @c : input
 * Return: Always 0.
 */
-
 int _isalpha(int c)
 {
-char zero = 0;
-char one = 1;
-
 if (c >= 'A' && c <= 'Z')
 {
-_putchar(one);
-return 1;
+return (1);
 }
 else if (c >= 'a' && c <= 'z')
 {
-_putchar(one);
 return (1);
 }
-else 
+else
 {
-_putchar (zero);
 return (0);
 }
 }
