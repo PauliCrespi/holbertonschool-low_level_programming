@@ -1,14 +1,19 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include "1-alphabet.c"
 /**
-* main - check the code.
+* print_aplhabet_x10 - check the code.
 *
 * Return: Always 0.
 */
 
 void print_alphabet_x10(void)
 {
-for (int i = 0, i >=10, i++);
+int counter = 0;
+
+while (counter >= 10)
 {
-	print_alphabet();
+print_alphabet();
+counter = counter + 1;
+}
 }
