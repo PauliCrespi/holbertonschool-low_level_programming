@@ -18,13 +18,13 @@ multi = x * m;
 if (multi > 9)
 {
 v = multi / 10;
-_putchar (v);
+_putchar (v + '0');
 v = multi % 10;
-_putchar(v);
+_putchar(v + '0');
 }
 else
 {
-_putchar (multi);
+_putchar (multi + '0');
 }
 if (x <= 8)
 {
