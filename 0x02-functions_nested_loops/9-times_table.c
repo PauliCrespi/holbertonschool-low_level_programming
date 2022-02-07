@@ -5,8 +5,8 @@
  */
 void times_table(void)
 {
-char m;
-char x;
+int m;
+int x;
 int multi;
 int v;
 
@@ -25,6 +25,6 @@ if (x <= 8)
 {
 _putchar (',');
 _putchar (' ');
-}}
-_putchar ('\n');
 }}}
+_putchar ('\n');
+}}
