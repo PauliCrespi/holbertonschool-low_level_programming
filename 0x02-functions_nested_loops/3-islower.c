@@ -2,20 +2,19 @@
 #include <ctype.h>
 
 /**
-* _islower - check for lowercases
-* c is a letter.
+*_islower - check for lowercases
+* @c : int
 * Return: Always 0.
 */
+
 int _islower(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 'a' && c <= 'b')
 {
-_putchar("0");
-return (0);
-}
-else if (c >= 'a' && c <= 'z')
-{
-_putchar("1");
 return (1);
+}
+else
+{
+return (0);
 }
 }
