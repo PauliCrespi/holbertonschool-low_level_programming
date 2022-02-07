@@ -3,8 +3,7 @@
 #include "1-alphabet.c"
 
 /**
-*print_aplhabet_x10 - check the code.
-*
+*print_alphabet_x10 - print the alphabet 10 time.
 * Return: Always 0.
 */
 
