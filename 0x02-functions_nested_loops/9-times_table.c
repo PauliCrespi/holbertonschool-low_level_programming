@@ -10,9 +10,9 @@ char x;
 int multi;
 int v;
 
-for (m = 0; m >= 9; m++)
+for (m = 0; m <= 9; m++)
 {
-for (x = 0; x >= 9; x++)
+for (x = 0; x <= 9; x++)
 {
 multi = x * m;
 if (multi > 9)
