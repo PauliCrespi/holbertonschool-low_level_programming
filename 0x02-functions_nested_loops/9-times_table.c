@@ -24,6 +24,7 @@ _putchar(v + '0');
 }
 else
 {
+_putchar (' ');
 _putchar (multi + '0');
 }
 if (x <= 8)
