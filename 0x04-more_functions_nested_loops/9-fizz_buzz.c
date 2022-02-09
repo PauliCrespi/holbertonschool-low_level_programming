@@ -1,9 +1,9 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
- *fizzbuzz - fizzingbuzzing
+ *main - fizzingbuzzing
  */
-void fizzbuzz(void)
+int main(void)
 {
 int n;
 
@@ -25,6 +25,7 @@ else
 {
 printf("%d", n);
 }
-_putchar(' ');
+printf(" ");
 }
+return (0);
 }
