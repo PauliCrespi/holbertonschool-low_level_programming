@@ -8,7 +8,7 @@ int i;
 int n;
 int print;
 
-for (i = 0; i <= 10; i++)
+for (i = 0; i < 10; i++)
 {
 for (n = 0; n <= 14; n++)
 {
