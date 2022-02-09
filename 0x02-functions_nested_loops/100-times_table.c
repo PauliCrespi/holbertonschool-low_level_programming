@@ -27,14 +27,16 @@ else
 {
 if (x != 0)
 {
-_putchar ('  ');
+_putchar (' ');
+_putchar (' ');
 }
 _putchar (multi + '0');
 }
 if (x <= (n - 1))
 {
 _putchar (',');
-_putchar ('  ');
+_putchar (' ');
+_putchar (' ');
 }}
 _putchar ('\n');
 }}
