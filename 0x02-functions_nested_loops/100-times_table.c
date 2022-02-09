@@ -27,7 +27,7 @@ _putchar(v + '0');
 else if (multi > 99)
 {
 v = multi / 100;
-_putchar (V);
+_putchar (v);
 v = multi / 10;
 _putchar (v);
 v = multi % 10;
