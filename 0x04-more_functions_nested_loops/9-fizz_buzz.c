@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  *main - fizzingbuzzing
+ *Return: zero
  */
 int main(void)
 {
