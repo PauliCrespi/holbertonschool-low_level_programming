@@ -21,7 +21,7 @@ if (c == 1)
 {
 _putchar('\\');
 }
-else 
+else
 {
 for (space = 1; space < c; space++)
 {
