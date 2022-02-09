@@ -16,12 +16,22 @@ for (m = 0; m <= n; m++)
 for (x = 0; x <= n; x++)
 {
 multi = x * m;
-if (multi > 9)
+if (multi > 9 && multi < 100)
 {
+_putchar (' ');
 v = multi / 10;
 _putchar (v + '0');
 v = multi % 10;
 _putchar(v + '0');
+}
+else if (multi > 99)
+{
+v = multi / 100;
+_putchar (V);
+v = multi / 10;
+_putchar (v);
+v = multi % 10;
+_putchar (v);
 }
 else
 {
@@ -29,14 +39,12 @@ if (x != 0)
 {
 _putchar (' ');
 _putchar (' ');
-}
-_putchar (multi + '0');
-}
+_putchar (v);
+}}
 if (x <= (n - 1))
 {
 _putchar (',');
-_putchar (' ');
-_putchar (' ');
-}}
+}
+}
 _putchar ('\n');
 }}
