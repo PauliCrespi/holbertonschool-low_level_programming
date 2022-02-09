@@ -27,23 +27,23 @@ _putchar(v + '0');
 else if (multi > 99)
 {
 v = multi / 100;
-_putchar (v);
+_putchar (v + '0'));
 v = multi / 10;
-_putchar (v);
+_putchar (v + '0'));
 v = multi % 10;
-_putchar (v);
+_putchar (v + '0'));
 }
 else if (multi < 9 &&  x != 0)
 {
 _putchar (' ');
 _putchar (' ');
-_putchar (v);
+_putchar (v + '0'));
 }
 else
 {
 _putchar (' ');
 _putchar (' ');
-_putchar (v);
+_putchar (v + '0'));
 }
 if (x <= (n - 1))
 {
