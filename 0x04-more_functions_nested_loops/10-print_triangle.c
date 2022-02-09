@@ -17,7 +17,7 @@ else
 {
 for (line = 1; line <= size; line++)
 {
-for (space = 1; space <= size - line; space++)
+for (space = 1; space < size - line; space++)
 {
 _putchar(' ');
 }
