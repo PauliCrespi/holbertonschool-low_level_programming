@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *print_diagonal - printing \
- *@n : input
- */
+*print_diagonal - printing bars
+*@n : input
+*
+*/
 void print_diagonal(int n)
 {
 int c;
@@ -14,26 +15,27 @@ _putchar('\n');
 }
 else
 {
-for (c = 0; c <= n; c++)
+for (c = 1; c <= n; c++)
 {
 if (n == 1)
 {
-_putchar ('\'),
+_putchar ('\\');
 }
 else
 {
-if (c == 0)
+if (c == 1)
 {
-_putchar('\');
+_putchar('\\');
 }
-else
+else 
 {
-for (space = 0; space <= c; space++)
+for (space = 1; space < c; space++)
 {
 _putchar(' ');
 }
-_putchar('\');
+_putchar('\\');
 }
+_putchar('\n');
 }
 }
 }
