@@ -33,14 +33,18 @@ _putchar (v);
 v = multi % 10;
 _putchar (v);
 }
-else
-{
-if (x != 0)
+else if (multi < 9 &&  x != 0)
 {
 _putchar (' ');
 _putchar (' ');
 _putchar (v);
-}}
+}
+else
+{
+_putchar (' ');
+_putchar (' ');
+_putchar (v);
+}
 if (x <= (n - 1))
 {
 _putchar (',');
