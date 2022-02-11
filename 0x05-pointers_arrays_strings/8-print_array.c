@@ -24,7 +24,7 @@ else
 {
 for (i = 0; i != n; i--)
 {
-printf(" ");
+printf("\n");
 }
 }
 }
