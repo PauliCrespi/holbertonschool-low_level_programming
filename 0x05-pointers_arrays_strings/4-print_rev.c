@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *print_rev - print string in reverse
  *@s : s
@@ -13,6 +12,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 
 }
+i= i -1;
 
 for (m = i; m >= 0; m--)
 {
