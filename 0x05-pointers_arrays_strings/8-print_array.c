@@ -25,6 +25,7 @@ else
 for (i = 0; i > n; i--)
 {
 printf("\n");
+printf("\n");
 }
 }
 }
