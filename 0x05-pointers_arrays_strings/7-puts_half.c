@@ -6,32 +6,24 @@
 void puts_half(char *str)
 {
 int i;
-int n;
 int m;
 
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 
 }
 i = i - 1;
 if (i % 2 == 1)
 {
-for (m = 0; s[m] != 0; m++)
-{
-n = (i - 1) / 2;
-if (m == n)
-{
-_putchar(s[m]);
-}
-}
+i = ((i / 2) + 1);
 }
 else
 {
-i = i 2;
-for (m = i; s[m]; m++)
+i = i / 2;
+}
+for (m = i; str[m] != '\0'; m++)
 {
-_putchar(s[m]);
+_putchar(str[m]);
 }
-}
-_putcar('\n');
+_putchar('\n');
 }
