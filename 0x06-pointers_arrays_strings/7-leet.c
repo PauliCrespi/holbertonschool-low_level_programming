@@ -14,7 +14,7 @@ char *leet(char *arr)
 
 	for (i = 0; arr[i] != '\0'; i++)
 	{
-		for (j = 0; lower[j] != '\0'; j++)
+		for (j = 0; lower[j] != '\0' && upper[j] != '\0'; j++)
 		{
 		if (arr[i] == lower[j] || arr[i] == upper[j])
 		{
