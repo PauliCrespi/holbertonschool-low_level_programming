@@ -8,8 +8,10 @@ char *cap_string(char *arrstr)
 {
 	int i;
 	int j;
-	char flags1[] = {'\n', '\t', ',', ';', '.', '!', '?', ')', '}', '(', '{', '"', ' '};
-
+	char flags1[] = {'\n', '\t', ',', ';', '.', '!', '?', ')',
+'}', '(', '{', '"', ' '};
+	if (arrstr[0] >= 'a' && arrstr[0] <= 'z')
+		arrstr[0] = = arrstr[0] - 32;
 	for (i = 0; arrstr[i] != '\0'; i++)
 	{
 		for (j = 0; flags1[j] != '\0'; j++)
@@ -25,7 +27,7 @@ char *cap_string(char *arrstr)
 				}
 				else if (arrstr[i + 1] >= 'a' && arrstr[i + 1] <= 'z')
 				{
-					arrstr[i + 1] = arrstr[i + 1] -32;
+					arrstr[i + 1] = arrstr[i + 1] - 32;
 				}
 			}
 		}
