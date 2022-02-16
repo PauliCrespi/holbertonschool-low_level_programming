@@ -18,19 +18,18 @@ int _strcmp(char *s1, char *s2)
 			else
 		{
 				return (s1[i] - s2[i]);
-				break;
 		}
 	}
 	if (s1[i] != '\0' && s2[i] == '\0')
 	{
-			return (0);
+		return (0);
 	}
-		else if (s1[i] == '\0' && s2[i] != '\0')
+	else if (s1[i] == '\0' && s2[i] != '\0')
 	{
-			return (0);
+		return (0);
 	}
-		else
+	else
 	{
-			return (0);
+		return (0);
 	}
 }
