@@ -11,7 +11,7 @@ char *cap_string(char *arrstr)
 	char flags1[] = {'\n', '\t', ',', ';', '.', '!', '?', ')',
 '}', '(', '{', '"', ' '};
 	if (arrstr[0] >= 'a' && arrstr[0] <= 'z')
-		arrstr[0] = = arrstr[0] - 32;
+		arrstr[0] = arrstr[0] - 32;
 	for (i = 0; arrstr[i] != '\0'; i++)
 	{
 		for (j = 0; flags1[j] != '\0'; j++)
