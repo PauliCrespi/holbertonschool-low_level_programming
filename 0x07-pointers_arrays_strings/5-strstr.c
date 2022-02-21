@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  *  * compare - man
  *   * @X : pointer
