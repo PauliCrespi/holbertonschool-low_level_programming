@@ -39,10 +39,10 @@ char *_strstr(char *haystack, char *needle)
 			if (flag != 2)
 				break;
 		}
-		if (flag == 2)
-			break;
-		else
+		if (flag != 2)
 			haystack++;
+		else
+			break;
 	}
 	return (haystack);
-}		
+}
