@@ -1,49 +1,38 @@
-#include "main.h"
+nclude "main.h"
 /**
- *_strstr - string
- *@haystack : pointer
- *@needle : pointer
- *Return: null or pointer
- */
+ *  * compare - man
+ *   * @X : pointer
+ *    * @Y : pointer
+ *     * Return: int
+ *      */
+int compare(const char *X, const char *Y)
+{
+	while (*X && *Y)
+	{
+		if (*X != *Y)
+		{
+			return (0);
+		}
+		X++;
+		Y++;
+	}
+	return (*Y == '\0');
+}
+/**
+ *  * _strstr - man
+ *   * @needle : pointer
+ *    * @haystack : pointer
+ *     * Return: char
+ *      */
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
-	int flag = 0;
-	int j;
-	int f;
-
-	while (haystack[i])
+	if (needle[0] == '\0')
+		return (haystack);
+	while (*haystack != '\0')
 	{
-		if (haystack[i] == needle[0])
-			flag = 1;
-		i++;
+		if (((*haystack == *needle) && compare(haystack, needle)))
+			return (haystack);
+		haystack++;
 	}
-	if (flag == 0)
-	{
-		return (0);
-	}
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		if (haystack[i] == needle[0])
-		{
-			f = i + 1;
-			for (j = 0; needle[j] != '\0'; j++, f++)
-			{
-				if (haystack[f] == needle[j])
-					flag = 2;
-				else
-					break;
-				if (flag != 2)
-					break;
-			}
-			if (flag != 2)
-				break;
-		}
-		if (flag != 2)
-			haystack++;
-		else
-			break;
-	}
-	haystack++;
-	return (haystack);
+	return (NULL);
 }
