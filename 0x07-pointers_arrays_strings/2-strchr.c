@@ -22,8 +22,8 @@ char *_strchr(char *s, char c)
 		if (flag == 1)
 			break;
 	}
-	if (flag == 0)
-		return (NULL);
-	else
+	if (flag == 1)
 		return (f);
+	else
+		return (NULL);
 }
