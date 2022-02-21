@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 	int right;
 	int left;
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		right = right + a[i];
 		a = a + size;
