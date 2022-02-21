@@ -25,5 +25,5 @@ char *_strchr(char *s, char c)
 	if (flag == 1)
 		return (f);
 	else
-		return (NULL);
+		return (0);
 }
