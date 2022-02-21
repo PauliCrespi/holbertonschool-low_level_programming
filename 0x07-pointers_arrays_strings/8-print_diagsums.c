@@ -8,8 +8,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int right;
-	int left;
+	int right = 0;
+	int left = 0;
 
 	for (i = 0; i < size; i++)
 	{
