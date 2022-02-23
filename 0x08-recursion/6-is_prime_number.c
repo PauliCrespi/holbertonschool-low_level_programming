@@ -11,7 +11,7 @@ int primenums(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-		return (primenums(n, i + 1));
+	return (primenums(n, i + 1));
 }
 /**
  * is_prime_number - main
