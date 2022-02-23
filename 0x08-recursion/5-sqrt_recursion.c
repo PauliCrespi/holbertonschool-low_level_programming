@@ -2,13 +2,14 @@
 /**
  *square - natural square root
  *@n : int
+ *@i : int
  *Return: int
  */
 int square(int n, int i)
 {
 	if (i * i == n)
 	{
-		return(i);
+		return (i);
 	}
 	else if (i == n)
 	{
@@ -35,7 +36,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-	root = square(n, 1);		
+	root = square(n, 1);
 	}
 	return (root);
 }
