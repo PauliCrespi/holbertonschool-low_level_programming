@@ -21,5 +21,9 @@ int _pow_recursion(int x, int y)
 	{
 		multi = x;
 	}
+	else if (y == 0)
+	{
+		multi = 1;
+	}
 	return (multi);
 }
