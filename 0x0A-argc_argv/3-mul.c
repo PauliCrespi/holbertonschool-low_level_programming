@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[]) 
+/**
+ *main - main function
+ *@argc : unused
+ *@argv : pointer
+ *Return: 0
+ */
+int main(int argc, char *argv[])
 {
 	int i;
 
-	if (2 <= argc)
+	if (argc >= 2)
 	{
 		i = atoi(argv[1]) * atoi(argv[2]);
-		printf ("%d\n", i);
+		printf("%d\n", i);
 	}
 	if (argc < 2)
 	{
-		printf ("Error\n");
+		printf("Error\n");
 		i = 1;
 	}
 	return (i);
