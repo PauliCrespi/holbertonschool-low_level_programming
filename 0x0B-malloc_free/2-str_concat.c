@@ -10,23 +10,18 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int i = 0;
-	int size = 0;
-	int sizee = 0;
-	int j = 0;
-	int sumsize = 0;
+	int i = 0, size = 0, sizee = 0, j = 0, sumsize = 0;
+
 	if (s1 != NULL)
 	{
 		for (size = 0; s1[size] != '\0'; size++)
 		{
-	
 		}
 	}
 	if (s2 != NULL)
 	{
 		for (sizee = 0; s2[sizee] != '\0'; sizee++)
 		{
-	
 		}
 	}
 	sumsize = size + sizee + 1;
