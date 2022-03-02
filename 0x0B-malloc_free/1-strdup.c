@@ -24,5 +24,8 @@ char *_strdup(char *str)
 	{
 		p[i] = str[i];
 	}
-	return (p);
+	if (p != NULL)
+		return (p);
+	else
+		return (NULL);
 }
