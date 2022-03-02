@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_str_concat - function
+ *str_concat - function
  *@s1 : pointer
  *@s2 : pointer 2
  *Return: char
@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int i;
+	int i = 0;
 	int size;
 	int sizee;
 	int j;
