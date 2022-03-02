@@ -26,13 +26,19 @@ char *str_concat(char *s1, char *s2)
 	}
 	sumsize = size + sizee + 2;
 	p = malloc(sumsize * sizeof(char));
-	for (i = 0; s1[i] != '\0'; i++)
+	if (size != 0)
 	{
-		p[i] = s1[i];
+		for (i = 0; s1[i] != '\0'; i++)
+		{
+			p[i] = s1[i];
+		}
 	}
-	for (j = 0; s2[j] != '\0'; j++, i++)
+	if (sizee != 0)
 	{
-		p[i] = s2[j];
+		for (j = 0; s2[j] != '\0'; j++, i++)
+		{
+			p[i] = s2[j];
+		}
 	}
 	p[i] = '\0';
 	if (p == NULL)
