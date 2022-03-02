@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_strdup - function
+ *_strdup - function copying a s
  *@str : pointer
  *Return: char
  */
