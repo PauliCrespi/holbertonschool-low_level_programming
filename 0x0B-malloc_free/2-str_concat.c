@@ -15,14 +15,19 @@ char *str_concat(char *s1, char *s2)
 	int sizee = 0;
 	int j = 0;
 	int sumsize = 0;
-
-	for (size = 0; s1[size] != '\0'; size++)
+	if (s1 != NULL)
 	{
-
+		for (size = 0; s1[size] != '\0'; size++)
+		{
+	
+		}
 	}
-	for (sizee = 0; s2[sizee] != '\0'; sizee++)
+	if (s2 != NULL)
 	{
-
+		for (sizee = 0; s2[sizee] != '\0'; sizee++)
+		{
+	
+		}
 	}
 	sumsize = size + sizee + 1;
 	p = malloc(sumsize * sizeof(char));
