@@ -4,7 +4,7 @@
 /**
  *_calloc - function
  *@nmemb : number of members
- *@size : bytes
+ *@size : bytes.
  *Return: pointer or null.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -12,9 +12,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *p;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
+		return (0);
 	p = malloc(nmemb * size);
 	if (p == NULL)
-		return (NULL);
+		return (0);
 	return (p);
+	free(p);
 }
