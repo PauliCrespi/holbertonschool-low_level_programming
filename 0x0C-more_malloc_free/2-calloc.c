@@ -5,7 +5,7 @@
  *_calloc - function
  *@nmemb : number of members
  *@size : bytes
- *Return: pointer or null
+ *Return: pointer or null.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
