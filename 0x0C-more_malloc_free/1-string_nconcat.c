@@ -11,39 +11,33 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	int i = 0, size = 0, sizee = 0, sumsize = 0;
-	unsigned int j = 0;
+	int i = 0, size = 0, sumsize = 0;
+	unsigned int j = 0, sizee = 0;
 
-	if (s1 != NULL)
+	if (s1 == NULL)
+		return (0);
+	for (size = 0; s1[size] != '\0'; size++)
 	{
-		for (size = 0; s1[size] != '\0'; size++)
-		{
-		}
 	}
-	if (s2 != NULL)
+	if (s2 == NULL)
+		return (0);
+	for (sizee = 0; s2[sizee] != '\0'; sizee++)
 	{
-		for (sizee = 0; s2[sizee] != '\0'; sizee++)
-		{
-		}
 	}
-	sumsize = size + sizee + 1;
+	if (n > sizee)
+		n = sizee;
+	sumsize = size + n + 1;
 	p = malloc(sumsize * sizeof(char));
 	if (p == NULL)
 		return (NULL);
-	if (size != 0 && s1 != NULL)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		for (i = 0; s1[i] != '\0'; i++)
-		{
-			p[i] = s1[i];
-		}
+		p[i] = s1[i];
 	}
-	if (sizee != 0 && s2 != NULL)
+	for (j = 0; j <= n; j++, i++)
 	{
-		for (j = 0; j <= n; j++, i++)
-		{
-			if (s2[j] != '\0')
-				p[i] = s2[j];
-		}
+		if (s2[j] != '\0')
+			p[i] = s2[j];
 	}
 	p[i] = '\0';
 	return (p);
