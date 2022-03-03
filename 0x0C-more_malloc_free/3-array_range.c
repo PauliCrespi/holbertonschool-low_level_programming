@@ -21,6 +21,8 @@ int *array_range(int min, int max)
 	else
 	{
 		p = malloc(0);
+		if (p == NULL)
+			return (NULL);
 		for (j = min; j <= max; j++, i++)
 		{
 			mem = mem + (sizeof(j) * sizeof(int));
