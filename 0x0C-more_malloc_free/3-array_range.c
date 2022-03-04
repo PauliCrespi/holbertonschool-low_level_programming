@@ -22,6 +22,7 @@ int *array_range(int min, int max)
 		if (p == NULL)
 			return (0);
 		p[0] = min;
+		return (p);
 	}
 	else if (min < max)
 	{
