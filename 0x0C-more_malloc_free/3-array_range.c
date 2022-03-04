@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	{
 		if (min == max)
 		{
-			p = malloc(sizeof(min) * sizeof(int));
+			p = malloc(sizeof(int));
 			if (p == NULL)
 				return (0);
 			p[0] = min;
@@ -33,7 +33,7 @@ int *array_range(int min, int max)
 			return (0);
 		for (j = min; j <= max; j++, i++)
 		{
-			mem = mem + (sizeof(j) * sizeof(int));
+			mem = mem + (sizeof(int));
 			p = (int *) realloc(p, mem);
 			if (p == NULL)
 				return (0);
