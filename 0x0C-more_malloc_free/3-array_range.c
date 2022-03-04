@@ -15,19 +15,13 @@ int *array_range(int min, int max)
 	int mem = 0;
 
 	if (max < min)
-	{
-		p = malloc(sizeof(int));
-		p[0] = 0;
-	}
+		return (NULL);
 	if (min == max)
 	{
-		if (min == max)
-		{
-			p = malloc(sizeof(int));
-			if (p == NULL)
-				return (0);
-			p[0] = min;
-		}
+		p = malloc(sizeof(int));
+		if (p == NULL)
+			return (0);
+		p[0] = min;
 	}
 	else if (min < max)
 	{
