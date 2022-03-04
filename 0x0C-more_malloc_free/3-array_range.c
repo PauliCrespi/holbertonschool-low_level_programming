@@ -14,7 +14,9 @@ int *array_range(int min, int max)
 	int j;
 	int mem = 0;
 
-	if (min <= max)
+	if (max < min)
+		return (NULL);
+	if (min == max)
 	{
 		if (min == max)
 		{
@@ -24,19 +26,19 @@ int *array_range(int min, int max)
 			p[0] = min;
 			p[1] = max;
 		}
-		else
+	}
+	else if (min < max)
+	{
+		p = malloc(0);
+		if (p == NULL)
+			return (0);
+		for (j = min; j <= max; j++, i++)
 		{
-			p = malloc(0);
+			mem = mem + (sizeof(j) * sizeof(int));
+			p = (int *) realloc(p, mem);
 			if (p == NULL)
 				return (0);
-			for (j = min; j <= max; j++, i++)
-			{
-				mem = mem + (sizeof(j) * sizeof(int));
-				p = (int *) realloc(p, mem);
-				if (p == NULL)
-					return (0);
-				p[i] = j;
-			}
+			p[i] = j;
 		}
 	}
 	return (p);
