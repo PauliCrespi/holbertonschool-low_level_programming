@@ -20,10 +20,11 @@ int *array_range(int min, int max)
 	}
 	else if (min == max)
 	{
-		p = malloc(sizeof(min) * sizeof(int));
+		p = malloc((sizeof(min) * sizeof(int)) + (sizeof(max) * sizeof(int)));
 		if (p == NULL)
 			return (0);
 		p[0] = min;
+		p[1] = max;
 	}
 	else
 	{
