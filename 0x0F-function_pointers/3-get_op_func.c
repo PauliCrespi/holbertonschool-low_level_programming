@@ -19,12 +19,14 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL)
+	while (ops[i].op != NULL && ops[i].op[0] != s[0])
 	{
-	if (ops[i].op[0] != s[0])
-		return (ops[i].f);
 	i++;
 	}
-	printf("Error\n");
-	exit(99);
+	return (ops[i].f);
+	if (i == 4 && ops[4].op[0] != s[0])
+	{
+		printf("Error\n");
+		exit(99);
+	}
 }
