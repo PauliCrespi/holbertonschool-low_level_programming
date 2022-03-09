@@ -1,5 +1,7 @@
 #include "3-calc.h"
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
  *get_op_func - function
  *@s : pointer of operator
@@ -22,4 +24,9 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 	return (ops[i].f);
+	if (i == 5)
+	{
+	printf("Error\n");
+	exit(99);
+	}
 }
