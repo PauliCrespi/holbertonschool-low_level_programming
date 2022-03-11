@@ -41,7 +41,7 @@ void print_string(va_list str)
 }
 /**
  * print_all - function
- * @format : char
+ * @format : char pointer
  */
 void print_all(const char * const format, ...)
 {
