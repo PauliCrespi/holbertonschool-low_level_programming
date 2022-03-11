@@ -1,5 +1,5 @@
-#ifndef VARIADICFUNCTIONS_H
-#define VARIADICFUNCTIONS_H
+#ifndef variadicfunctions_h
+#define variadicfunctions_H
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -19,4 +19,4 @@ void print_int(va_list intt);
 void print_float(va_list flo);
 void print_string(va_list str);
 
-#endif /* VARIADICFUNCTIONS_H */
+#endif /* variadicfunctions_h */
