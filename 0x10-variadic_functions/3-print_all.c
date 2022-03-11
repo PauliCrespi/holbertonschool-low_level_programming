@@ -40,7 +40,7 @@ void print_string(va_list str)
 		printf("(NIL)");
 }
 /**
- * print_all - function
+ * print_all - function main
  * @format : char pointer
  */
 void print_all(const char * const format, ...)
