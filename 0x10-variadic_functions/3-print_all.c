@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+
 /**
  *print_char - print char
  *@cha : va list
@@ -7,6 +8,7 @@ void print_char(va_list cha)
 {
 	printf("%c", va_arg(cha, int));
 }
+
 /**
  *print_int - print int
  *@intt : va list
@@ -15,6 +17,7 @@ void print_int(va_list intt)
 {
 	printf("%d", va_arg(intt, int));
 }
+
 /**
  *print_float - print float
  *@flo : va list
@@ -23,6 +26,7 @@ void print_float(va_list flo)
 {
 	printf("%f", va_arg(flo, double));
 }
+
 /**
  *print_string - print string
  *@str : va list
@@ -31,11 +35,11 @@ void print_string(va_list str)
 {
 	char *stringg = va_arg(str, char *);
 
-	if (stringg != NULL)
-		printf("%s", stringg);
-	else
-		printf("(NIL)");
+	if (stringg == NULL)
+		stringg = "(nil)";
+	printf("%s", stringg);
 }
+
 /**
  * print_all - function main
  * @format : char pointer
