@@ -1,7 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdlib.h>
-#include <stdio.h>
 /**
  *print_char - print char
  *@cha : va list
