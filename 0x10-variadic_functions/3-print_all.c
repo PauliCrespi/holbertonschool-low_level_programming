@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- *print_char - print a char
+ *print_char - print char
  *@cha : va list
  */
 void print_char(va_list cha)
