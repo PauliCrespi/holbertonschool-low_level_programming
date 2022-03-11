@@ -56,6 +56,7 @@ void print_all(const char * const format, ...)
 	int j = 0;
 	va_list agrs;
 	char *sepa = "";
+
 	va_start(agrs, format);
 	while (format && format[j])
 	{
