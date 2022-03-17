@@ -3,11 +3,19 @@
 
 #include <stddef.h>
 #include <stdio.h>
-
-typedef struct list {
-    char *str;
-    unsigned int len;
-    struct list *next;
+#include <stdlib.h>
+#include<string.h>
+/**
+ * struct list - list
+ * @str : char
+ * @len : unsigned int
+ * @next : pointer
+ */
+typedef struct list
+{
+	char *str;
+	unsigned int len;
+	struct list *next;
 } list_t;
 
 size_t print_list(const list_t *h);
