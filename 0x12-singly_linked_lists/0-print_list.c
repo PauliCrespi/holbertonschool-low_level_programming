@@ -17,11 +17,10 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[0](nil)\n");
+			printf("[0] (nil)\n");
 		}
 		i++;
 		h = h->next;
-
 	}
 	return (i);
 }
