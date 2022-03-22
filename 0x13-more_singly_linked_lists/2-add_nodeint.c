@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- *
- *
- *
- *
+ *add_nodeint -  function
+ *@head : pointer pointer
+ *@n : int
+ *Return: listint_t
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
