@@ -9,6 +9,8 @@ int pop_listint(listint_t **head)
 	listint_t *aux;
 	int result;
 
+	if (*head == NULL)
+		return (0);
 	result = (*head)->n;
 	aux = (*head)->next;
 	free(*head);
