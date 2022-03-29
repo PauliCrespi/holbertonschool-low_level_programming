@@ -3,11 +3,17 @@
  *closeerror - func
  *@argv1 : argv
  *@argv2 : pointer
+ *@fr : read
  *@fd : int
  *@fp : int
  */
-void closeerror(char *argv1, char *argv2, int fd, int fp)
+void closeerror(char *argv1, char *argv2, ssize_t fr, int fd, int fp)
 {
+	if (fr == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv1);
+		exit(98);
+	}
 	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", *argv2);
@@ -63,6 +69,6 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	closeerror(argv[1], argv[2], fd, fp);
+	closeerror(argv[1], argv[2], fr, fd, fp);
 	return (0);
 }
