@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- *key_index - main
+ *key_index - main func
  *@key: specific
  *@size: size int
  *Return: index
