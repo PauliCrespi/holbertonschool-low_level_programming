@@ -6,12 +6,12 @@
 #include <stdio.h>
 
 /**
- * struct hash_node_s 
+ * struct hash_node_s - Node of a hash table
  *
  * @key: The key
- * The key is unique 
- * @value: The value 
- * @next: A pointer 
+ * The key is unique
+ * @value: The value
+ * @next: A pointer
  */
 typedef struct hash_node_s
 {
@@ -21,7 +21,7 @@ typedef struct hash_node_s
 } hash_node_t;
 
 /**
- * struct hash_table_s - Hash 
+ * struct hash_table_s - Hash table data structure
  *
  * @size: The size
  * @array: An array
