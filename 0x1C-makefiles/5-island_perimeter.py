@@ -5,16 +5,18 @@
 def island_perimeter(grid):
     """grid island is a list"""
     per = 0
-    for i in range(1, len(grid) - 1):
-        for j in range(1, len(grid[i]) - 1):
-            if grid[i][j] == 1:
-                per = per + 4
-                if grid[i][j+1] == 1:
-                    per = per - 1
-                if grid[i][j-1] == 1:
-                    per = per - 1
-                if grid[i-1][j] == 1:
-                    per = per - 1
-                if grid[i+1][j] == 1:
-                    per = per - 1
+    length = len(grid) - 1
+    width = len(grid[0]) - 1
+
+    for i, r in enumerate(grid):
+        for j, n in enumerate(r):
+            if n == 1:
+                if i == 0 or grid[i - 1][j] != 1:
+                    per += 1
+                if j == 0 or grid[i][j - 1] != 1:
+                    per += 1
+                if j == width or grid[i][j + 1] != 1:
+                    per += 1
+                if i == length or grid[i + 1][j] != 1:
+                    per += 1
     return (per)
