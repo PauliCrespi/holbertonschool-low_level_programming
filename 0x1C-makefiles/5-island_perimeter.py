@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """task 5"""
+
+
 def island_perimeter(grid):
     """grid island is a list"""
     per = 0
